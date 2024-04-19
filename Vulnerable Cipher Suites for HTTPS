@@ -1,0 +1,2 @@
+sudo grep -rl "SSLCipherSuite" /etc/apache2/mods-available/ssl.conf | xargs sed -i 's/SSLCipherSuite HIGH:MEDIUM:!aNULL:!MD5/SSLCipherSuite HIGH:!aNULL:!MD5/g'
+sudo service apache2 restart
