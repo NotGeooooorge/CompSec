@@ -1,0 +1,3 @@
+sudo apt install libjs-jquery
+sudo apt update –y
+sudo apt upgrade -y
