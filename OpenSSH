@@ -1,0 +1,11 @@
+#!/bin/bash
+
+sudo apt install openssh-client -y
+sudo apt install openssh-server -y
+man sshd_config
+sudo sshd -t -f /etc/ssh/sshd_config
+sudo systemctl restart sshd.service
+ssh-keygen -t rsa
+ssh-keygen -t rsa -b 4096
+ssh-copy-id vagrant@vagrant
+chmod 600 ~/.ssh/authorized_keys
