@@ -1,1 +1,2 @@
 sudo apt-get update sudo apt-get install proftpd sudo nano /etc/proftpd/modules.conf
+sudo service proftpd restart
